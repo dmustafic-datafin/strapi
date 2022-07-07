@@ -1,6 +1,7 @@
 export default {
   config: {
     locales: [
+      hr,
       // 'ar',
       // 'fr',
       // 'cs',

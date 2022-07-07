@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,10 +16,18 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "minLength": 1
+      "minLength": 1,
+      "pluginOptions": {}
+    },
+    "Address": {
+      "type": "string",
+      "required": false,
+      "unique": false,
+      "pluginOptions": {}
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {}
     },
     "categories": {
       "type": "relation",
@@ -32,14 +40,19 @@
       "targetField": "Name"
     },
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false
+      "pluginOptions": {}
+    },
+    "placeHolder": {
+      "type": "string"
     }
   }
 }
